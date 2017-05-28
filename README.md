@@ -1,1 +1,34 @@
 #url-state
+###1/Sloth.state.setConfig
+设置各个页面传值和跳转的名字
+Sloth.state.setConfig({
+ //'default' 是路由的名字，用来go方法跳转
+ template是页面路径；连接host的绝对路径
+ param是传值的规格；用'/'分开
+  'default':{
+    template:'',
+    param:'/pid'
+  },
+  'index':{
+    template:'',
+    param:'/id
+  }
+});
+###2/Sloth.state.go
+go方法第一个参数是路由名字；第二个是传值；
+Sloth.state.go('index',{id:1});
+###3/Sloth.state.goBack
+返回上一页；
+Sloth.state.goBack();
+###4/Fun.state.currentPage
+是当前页面的路由的名字；
+###5/Fun.state.params
+获取本页面的hash值接收到的参数
+###6/Fun.state.chang
+hash值变化时调用的参数
+Fun.state.chang(function(){
+ //页面hash值变化时触发事件
+});
+###7/Fun.state.backViewUrl
+返回上一个页面的url
+Fun.state.backViewUrl();
