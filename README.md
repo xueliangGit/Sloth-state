@@ -1,4 +1,5 @@
-#url-state
+#Sloth-state.js
+##由@树懒工作室-@略过无声-编写
 ###1/Sloth.state.setConfig
 设置各个页面传值和跳转的名字
 `Sloth.state.setConfig({
